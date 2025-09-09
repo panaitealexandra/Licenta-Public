@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5884389610597068559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 40802609253584179}
+  - component: {fileID: 6567717469613244161}
+  - component: {fileID: 5644528830732499068}
+  m_Layer: 0
+  m_Name: ChatManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &40802609253584179
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5884389610597068559}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.24976021, y: -1.9878263, z: 0.08378252}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6567717469613244161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5884389610597068559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa707c29bcd69e34fbd9b976d3b8341a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  apiKey: AIzaSyBXG44sl3wRb4DeVdPRyn9R38EFCXvMCE8
+  model: gemini-pro
+  systemPrompt: You are Budy, a helpful AI companion in a space shooter game. You're
+    friendly, encouraging, and provide gameplay tips. Keep responses short and conversational.
+    You help the player during their space adventure against aliens and asteroids.
+--- !u!114 &5644528830732499068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5884389610597068559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1252c2006c3311a479bbbfc8204ed659, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chatPanel: {fileID: 0}
+  chatScrollRect: {fileID: 0}
+  chatContent: {fileID: 0}
+  inputField: {fileID: 0}
+  sendButton: {fileID: 0}
+  toggleButton: {fileID: 0}
+  messagePrefab: {fileID: 0}
+  maxMessages: 50
+  playerMessageColor: {r: 1, g: 1, b: 1, a: 1}
+  budyMessageColor: {r: 0, g: 1, b: 1, a: 1}
+  toggleKey: 13
